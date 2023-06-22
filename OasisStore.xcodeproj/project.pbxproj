@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3003BC8B2A3CD2D4006DC196 /* ProductServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003BC8A2A3CD2D4006DC196 /* ProductServiceProtocol.swift */; };
+		3021056A2A3B596C0006F8C1 /* OasisStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105692A3B596C0006F8C1 /* OasisStoreApp.swift */; };
+		3021056C2A3B596C0006F8C1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021056B2A3B596C0006F8C1 /* HomeView.swift */; };
+		3021056E2A3B596D0006F8C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3021056D2A3B596D0006F8C1 /* Assets.xcassets */; };
+		302105712A3B596D0006F8C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 302105702A3B596D0006F8C1 /* Preview Assets.xcassets */; };
+		3021057B2A3B596D0006F8C1 /* OasisStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021057A2A3B596D0006F8C1 /* OasisStoreTests.swift */; };
+		302105852A3B596D0006F8C1 /* OasisStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105842A3B596D0006F8C1 /* OasisStoreUITests.swift */; };
+		302105872A3B596D0006F8C1 /* OasisStoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105862A3B596D0006F8C1 /* OasisStoreUITestsLaunchTests.swift */; };
+		3021059E2A3B7DB80006F8C1 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021059D2A3B7DB80006F8C1 /* HeaderView.swift */; };
+		302105A02A3B7F010006F8C1 /* IconButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021059F2A3B7F010006F8C1 /* IconButtonView.swift */; };
+		302105A32A3BB29E0006F8C1 /* ProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105A22A3BB29E0006F8C1 /* ProductItemView.swift */; };
+		302105A52A3BBA390006F8C1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105A42A3BBA390006F8C1 /* Product.swift */; };
+		302105A72A3BBAC80006F8C1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105A62A3BBAC80006F8C1 /* HomeViewModel.swift */; };
+		302105AB2A3BF1A30006F8C1 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105AA2A3BF1A30006F8C1 /* Color.swift */; };
+		302105AD2A3C007F0006F8C1 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105AC2A3C007F0006F8C1 /* MenuItemView.swift */; };
+		302105AF2A3C00900006F8C1 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105AE2A3C00900006F8C1 /* Menu.swift */; };
+		302105B22A3C0DCB0006F8C1 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105B12A3C0DCB0006F8C1 /* SideMenuView.swift */; };
+		302105B42A3C149A0006F8C1 /* ProductSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105B32A3C149A0006F8C1 /* ProductSectionView.swift */; };
+		302105B52A3C15940006F8C1 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105A82A3BBE9C0006F8C1 /* PreviewProvider.swift */; };
+		302105B92A3C27FE0006F8C1 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105B82A3C27FE0006F8C1 /* BannerView.swift */; };
+		302105BC2A3C2DD80006F8C1 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105BB2A3C2DD80006F8C1 /* ProductService.swift */; };
+		302105C12A3C2E9A0006F8C1 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105C02A3C2E9A0006F8C1 /* APIRouter.swift */; };
+		302105C32A3C340B0006F8C1 /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105C22A3C340B0006F8C1 /* ProductRepository.swift */; };
+		302105C52A3C345A0006F8C1 /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105C42A3C345A0006F8C1 /* NetworkUtil.swift */; };
+		302105C72A3C385F0006F8C1 /* HomeReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105C62A3C385F0006F8C1 /* HomeReponse.swift */; };
+		3042FB242A43A44E00180B28 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3042FB232A43A44E00180B28 /* Double.swift */; };
+		3042FB262A43A6AF00180B28 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3042FB252A43A6AF00180B28 /* Text.swift */; };
+		3042FB2B2A43AD7200180B28 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3042FB2A2A43AD7200180B28 /* ProductDetailView.swift */; };
+		3042FB342A43D33000180B28 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3042FB332A43D33000180B28 /* Banner.swift */; };
+		30A07C912A3D1317009E4D6B /* OrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A07C902A3D1317009E4D6B /* OrderResponse.swift */; };
+		30A07C932A3D4E8C009E4D6B /* KeychainUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A07C922A3D4E8C009E4D6B /* KeychainUtil.swift */; };
+		30A07C952A3D7B97009E4D6B /* UserDefaultUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A07C942A3D7B97009E4D6B /* UserDefaultUtil.swift */; };
+		30C2A01F2A42D13200CB951D /* ProductRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C2A01E2A42D13200CB951D /* ProductRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		302105772A3B596D0006F8C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3021055E2A3B596C0006F8C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 302105652A3B596C0006F8C1;
+			remoteInfo = OasisStore;
+		};
+		302105812A3B596D0006F8C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3021055E2A3B596C0006F8C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 302105652A3B596C0006F8C1;
+			remoteInfo = OasisStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3003BC8A2A3CD2D4006DC196 /* ProductServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServiceProtocol.swift; sourceTree = "<group>"; };
+		302105662A3B596C0006F8C1 /* OasisStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OasisStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		302105692A3B596C0006F8C1 /* OasisStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OasisStoreApp.swift; sourceTree = "<group>"; };
+		3021056B2A3B596C0006F8C1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3021056D2A3B596D0006F8C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		302105702A3B596D0006F8C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		302105762A3B596D0006F8C1 /* OasisStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OasisStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3021057A2A3B596D0006F8C1 /* OasisStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OasisStoreTests.swift; sourceTree = "<group>"; };
+		302105802A3B596D0006F8C1 /* OasisStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OasisStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		302105842A3B596D0006F8C1 /* OasisStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OasisStoreUITests.swift; sourceTree = "<group>"; };
+		302105862A3B596D0006F8C1 /* OasisStoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OasisStoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3021059D2A3B7DB80006F8C1 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		3021059F2A3B7F010006F8C1 /* IconButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButtonView.swift; sourceTree = "<group>"; };
+		302105A22A3BB29E0006F8C1 /* ProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemView.swift; sourceTree = "<group>"; };
+		302105A42A3BBA390006F8C1 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		302105A62A3BBAC80006F8C1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		302105A82A3BBE9C0006F8C1 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		302105AA2A3BF1A30006F8C1 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		302105AC2A3C007F0006F8C1 /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		302105AE2A3C00900006F8C1 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		302105B12A3C0DCB0006F8C1 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		302105B32A3C149A0006F8C1 /* ProductSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSectionView.swift; sourceTree = "<group>"; };
+		302105B82A3C27FE0006F8C1 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		302105BB2A3C2DD80006F8C1 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		302105C02A3C2E9A0006F8C1 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		302105C22A3C340B0006F8C1 /* ProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
+		302105C42A3C345A0006F8C1 /* NetworkUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
+		302105C62A3C385F0006F8C1 /* HomeReponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReponse.swift; sourceTree = "<group>"; };
+		3042FB232A43A44E00180B28 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		3042FB252A43A6AF00180B28 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		3042FB2A2A43AD7200180B28 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		3042FB332A43D33000180B28 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		30A07C902A3D1317009E4D6B /* OrderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderResponse.swift; sourceTree = "<group>"; };
+		30A07C922A3D4E8C009E4D6B /* KeychainUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainUtil.swift; sourceTree = "<group>"; };
+		30A07C942A3D7B97009E4D6B /* UserDefaultUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultUtil.swift; sourceTree = "<group>"; };
+		30C2A01E2A42D13200CB951D /* ProductRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRouter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		302105632A3B596C0006F8C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		302105732A3B596D0006F8C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3021057D2A3B596D0006F8C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3021055D2A3B596C0006F8C1 = {
+			isa = PBXGroup;
+			children = (
+				302105682A3B596C0006F8C1 /* OasisStore */,
+				302105792A3B596D0006F8C1 /* OasisStoreTests */,
+				302105832A3B596D0006F8C1 /* OasisStoreUITests */,
+				302105672A3B596C0006F8C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		302105672A3B596C0006F8C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				302105662A3B596C0006F8C1 /* OasisStore.app */,
+				302105762A3B596D0006F8C1 /* OasisStoreTests.xctest */,
+				302105802A3B596D0006F8C1 /* OasisStoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		302105682A3B596C0006F8C1 /* OasisStore */ = {
+			isa = PBXGroup;
+			children = (
+				302105962A3B7B460006F8C1 /* Utilities */,
+				302105952A3B7B3A0006F8C1 /* Extensions */,
+				302105932A3B7B1B0006F8C1 /* Models */,
+				302105BA2A3C2DC40006F8C1 /* Service */,
+				302105BF2A3C2E480006F8C1 /* Repositories */,
+				3021059C2A3B7BD60006F8C1 /* Views */,
+				302105942A3B7B230006F8C1 /* Scenes */,
+				302105692A3B596C0006F8C1 /* OasisStoreApp.swift */,
+				3021056D2A3B596D0006F8C1 /* Assets.xcassets */,
+				3021056F2A3B596D0006F8C1 /* Preview Content */,
+			);
+			path = OasisStore;
+			sourceTree = "<group>";
+		};
+		3021056F2A3B596D0006F8C1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				302105702A3B596D0006F8C1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		302105792A3B596D0006F8C1 /* OasisStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				3021057A2A3B596D0006F8C1 /* OasisStoreTests.swift */,
+			);
+			path = OasisStoreTests;
+			sourceTree = "<group>";
+		};
+		302105832A3B596D0006F8C1 /* OasisStoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				302105842A3B596D0006F8C1 /* OasisStoreUITests.swift */,
+				302105862A3B596D0006F8C1 /* OasisStoreUITestsLaunchTests.swift */,
+			);
+			path = OasisStoreUITests;
+			sourceTree = "<group>";
+		};
+		302105932A3B7B1B0006F8C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				302105C82A3C3F900006F8C1 /* NetworkRespone */,
+				302105A42A3BBA390006F8C1 /* Product.swift */,
+				302105AE2A3C00900006F8C1 /* Menu.swift */,
+				3042FB332A43D33000180B28 /* Banner.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		302105942A3B7B230006F8C1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				302105972A3B7B7A0006F8C1 /* Home */,
+				3042FB272A43AD4E00180B28 /* DetailView */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		302105952A3B7B3A0006F8C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				302105A82A3BBE9C0006F8C1 /* PreviewProvider.swift */,
+				3042FB232A43A44E00180B28 /* Double.swift */,
+				302105AA2A3BF1A30006F8C1 /* Color.swift */,
+				3042FB252A43A6AF00180B28 /* Text.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		302105962A3B7B460006F8C1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				302105C42A3C345A0006F8C1 /* NetworkUtil.swift */,
+				30A07C922A3D4E8C009E4D6B /* KeychainUtil.swift */,
+				30A07C942A3D7B97009E4D6B /* UserDefaultUtil.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		302105972A3B7B7A0006F8C1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				302105992A3B7B8C0006F8C1 /* ViewModel */,
+				302105982A3B7B820006F8C1 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		302105982A3B7B820006F8C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3021056B2A3B596C0006F8C1 /* HomeView.swift */,
+				302105B32A3C149A0006F8C1 /* ProductSectionView.swift */,
+				302105B12A3C0DCB0006F8C1 /* SideMenuView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		302105992A3B7B8C0006F8C1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				302105A62A3BBAC80006F8C1 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3021059C2A3B7BD60006F8C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				302105B82A3C27FE0006F8C1 /* BannerView.swift */,
+				3021059D2A3B7DB80006F8C1 /* HeaderView.swift */,
+				302105AC2A3C007F0006F8C1 /* MenuItemView.swift */,
+				3021059F2A3B7F010006F8C1 /* IconButtonView.swift */,
+				302105A22A3BB29E0006F8C1 /* ProductItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		302105BA2A3C2DC40006F8C1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				302105C02A3C2E9A0006F8C1 /* APIRouter.swift */,
+				30C2A01E2A42D13200CB951D /* ProductRouter.swift */,
+				3003BC8A2A3CD2D4006DC196 /* ProductServiceProtocol.swift */,
+				302105BB2A3C2DD80006F8C1 /* ProductService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		302105BF2A3C2E480006F8C1 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				302105C22A3C340B0006F8C1 /* ProductRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		302105C82A3C3F900006F8C1 /* NetworkRespone */ = {
+			isa = PBXGroup;
+			children = (
+				302105C62A3C385F0006F8C1 /* HomeReponse.swift */,
+				30A07C902A3D1317009E4D6B /* OrderResponse.swift */,
+			);
+			path = NetworkRespone;
+			sourceTree = "<group>";
+		};
+		3042FB272A43AD4E00180B28 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				3042FB302A43C03C00180B28 /* ViewModel */,
+				3042FB2F2A43C02F00180B28 /* View */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		3042FB2F2A43C02F00180B28 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3042FB2A2A43AD7200180B28 /* ProductDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3042FB302A43C03C00180B28 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		302105652A3B596C0006F8C1 /* OasisStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3021058A2A3B596D0006F8C1 /* Build configuration list for PBXNativeTarget "OasisStore" */;
+			buildPhases = (
+				302105622A3B596C0006F8C1 /* Sources */,
+				302105632A3B596C0006F8C1 /* Frameworks */,
+				302105642A3B596C0006F8C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OasisStore;
+			productName = OasisStore;
+			productReference = 302105662A3B596C0006F8C1 /* OasisStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		302105752A3B596D0006F8C1 /* OasisStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3021058D2A3B596D0006F8C1 /* Build configuration list for PBXNativeTarget "OasisStoreTests" */;
+			buildPhases = (
+				302105722A3B596D0006F8C1 /* Sources */,
+				302105732A3B596D0006F8C1 /* Frameworks */,
+				302105742A3B596D0006F8C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				302105782A3B596D0006F8C1 /* PBXTargetDependency */,
+			);
+			name = OasisStoreTests;
+			productName = OasisStoreTests;
+			productReference = 302105762A3B596D0006F8C1 /* OasisStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3021057F2A3B596D0006F8C1 /* OasisStoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 302105902A3B596D0006F8C1 /* Build configuration list for PBXNativeTarget "OasisStoreUITests" */;
+			buildPhases = (
+				3021057C2A3B596D0006F8C1 /* Sources */,
+				3021057D2A3B596D0006F8C1 /* Frameworks */,
+				3021057E2A3B596D0006F8C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				302105822A3B596D0006F8C1 /* PBXTargetDependency */,
+			);
+			name = OasisStoreUITests;
+			productName = OasisStoreUITests;
+			productReference = 302105802A3B596D0006F8C1 /* OasisStoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3021055E2A3B596C0006F8C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					302105652A3B596C0006F8C1 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					302105752A3B596D0006F8C1 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 302105652A3B596C0006F8C1;
+					};
+					3021057F2A3B596D0006F8C1 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 302105652A3B596C0006F8C1;
+					};
+				};
+			};
+			buildConfigurationList = 302105612A3B596C0006F8C1 /* Build configuration list for PBXProject "OasisStore" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3021055D2A3B596C0006F8C1;
+			productRefGroup = 302105672A3B596C0006F8C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				302105652A3B596C0006F8C1 /* OasisStore */,
+				302105752A3B596D0006F8C1 /* OasisStoreTests */,
+				3021057F2A3B596D0006F8C1 /* OasisStoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		302105642A3B596C0006F8C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302105712A3B596D0006F8C1 /* Preview Assets.xcassets in Resources */,
+				3021056E2A3B596D0006F8C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		302105742A3B596D0006F8C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3021057E2A3B596D0006F8C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		302105622A3B596C0006F8C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302105C52A3C345A0006F8C1 /* NetworkUtil.swift in Sources */,
+				30C2A01F2A42D13200CB951D /* ProductRouter.swift in Sources */,
+				302105A32A3BB29E0006F8C1 /* ProductItemView.swift in Sources */,
+				30A07C952A3D7B97009E4D6B /* UserDefaultUtil.swift in Sources */,
+				302105C12A3C2E9A0006F8C1 /* APIRouter.swift in Sources */,
+				3021056C2A3B596C0006F8C1 /* HomeView.swift in Sources */,
+				302105A72A3BBAC80006F8C1 /* HomeViewModel.swift in Sources */,
+				3042FB242A43A44E00180B28 /* Double.swift in Sources */,
+				3021059E2A3B7DB80006F8C1 /* HeaderView.swift in Sources */,
+				302105AD2A3C007F0006F8C1 /* MenuItemView.swift in Sources */,
+				3042FB262A43A6AF00180B28 /* Text.swift in Sources */,
+				30A07C912A3D1317009E4D6B /* OrderResponse.swift in Sources */,
+				302105B92A3C27FE0006F8C1 /* BannerView.swift in Sources */,
+				302105BC2A3C2DD80006F8C1 /* ProductService.swift in Sources */,
+				302105AF2A3C00900006F8C1 /* Menu.swift in Sources */,
+				302105B42A3C149A0006F8C1 /* ProductSectionView.swift in Sources */,
+				3042FB342A43D33000180B28 /* Banner.swift in Sources */,
+				302105B22A3C0DCB0006F8C1 /* SideMenuView.swift in Sources */,
+				302105A02A3B7F010006F8C1 /* IconButtonView.swift in Sources */,
+				3021056A2A3B596C0006F8C1 /* OasisStoreApp.swift in Sources */,
+				302105C32A3C340B0006F8C1 /* ProductRepository.swift in Sources */,
+				302105A52A3BBA390006F8C1 /* Product.swift in Sources */,
+				302105AB2A3BF1A30006F8C1 /* Color.swift in Sources */,
+				30A07C932A3D4E8C009E4D6B /* KeychainUtil.swift in Sources */,
+				3003BC8B2A3CD2D4006DC196 /* ProductServiceProtocol.swift in Sources */,
+				302105B52A3C15940006F8C1 /* PreviewProvider.swift in Sources */,
+				302105C72A3C385F0006F8C1 /* HomeReponse.swift in Sources */,
+				3042FB2B2A43AD7200180B28 /* ProductDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		302105722A3B596D0006F8C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3021057B2A3B596D0006F8C1 /* OasisStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3021057C2A3B596D0006F8C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302105872A3B596D0006F8C1 /* OasisStoreUITestsLaunchTests.swift in Sources */,
+				302105852A3B596D0006F8C1 /* OasisStoreUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		302105782A3B596D0006F8C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 302105652A3B596C0006F8C1 /* OasisStore */;
+			targetProxy = 302105772A3B596D0006F8C1 /* PBXContainerItemProxy */;
+		};
+		302105822A3B596D0006F8C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 302105652A3B596C0006F8C1 /* OasisStore */;
+			targetProxy = 302105812A3B596D0006F8C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		302105882A3B596D0006F8C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		302105892A3B596D0006F8C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3021058B2A3B596D0006F8C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OasisStore/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vanaraleng.OasisStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3021058C2A3B596D0006F8C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OasisStore/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vanaraleng.OasisStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3021058E2A3B596D0006F8C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vanaraleng.OasisStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OasisStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OasisStore";
+			};
+			name = Debug;
+		};
+		3021058F2A3B596D0006F8C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vanaraleng.OasisStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OasisStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OasisStore";
+			};
+			name = Release;
+		};
+		302105912A3B596D0006F8C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vanaraleng.OasisStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OasisStore;
+			};
+			name = Debug;
+		};
+		302105922A3B596D0006F8C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vanaraleng.OasisStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OasisStore;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		302105612A3B596C0006F8C1 /* Build configuration list for PBXProject "OasisStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				302105882A3B596D0006F8C1 /* Debug */,
+				302105892A3B596D0006F8C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3021058A2A3B596D0006F8C1 /* Build configuration list for PBXNativeTarget "OasisStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3021058B2A3B596D0006F8C1 /* Debug */,
+				3021058C2A3B596D0006F8C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3021058D2A3B596D0006F8C1 /* Build configuration list for PBXNativeTarget "OasisStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3021058E2A3B596D0006F8C1 /* Debug */,
+				3021058F2A3B596D0006F8C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		302105902A3B596D0006F8C1 /* Build configuration list for PBXNativeTarget "OasisStoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				302105912A3B596D0006F8C1 /* Debug */,
+				302105922A3B596D0006F8C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3021055E2A3B596C0006F8C1 /* Project object */;
+}
