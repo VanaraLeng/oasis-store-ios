@@ -9,6 +9,5 @@ import Foundation
 import Combine
 
 protocol ProductServiceProtocol {
-    func getHomeData() -> AnyPublisher<HomeResponse, Error>?
-    func getOrderData() -> AnyPublisher<OrderResponse, Error>?
+    func getHomeData() -> AnyPublisher<HomeResponse, NetworkError>
 }

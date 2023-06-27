@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProductSectionView: View {
     
-    @State var title: String
+    @State var title: String.LocalizationValue
     @Binding var products: [Product]
     
     var onItemTap: ((Product) -> Void)?
@@ -18,7 +18,7 @@ struct ProductSectionView: View {
     
     var body: some View {
         VStack (alignment: .leading){
-            Text(title)
+            Text(String(localized: title))
                 .font(.title3)
                 .padding(.horizontal, 20)
                 .foregroundColor(.accentColor)

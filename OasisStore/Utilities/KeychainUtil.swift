@@ -8,9 +8,10 @@
 import Foundation
 import Security
 
-enum KeychainServiceType: String {
-    case accessToken
-    case refreshToken
+struct KeychainServiceType: RawRepresentable {
+    var rawValue: String
+    static let accessToken = KeychainServiceType(rawValue: "accessToken")
+    static let refreshToken = KeychainServiceType(rawValue: "refreshToken")
 }
 
 class KeychainUtil {

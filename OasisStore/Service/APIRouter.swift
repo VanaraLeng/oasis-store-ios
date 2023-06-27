@@ -20,6 +20,33 @@ extension APIRouterProtocol {
     var baseUrl: String {
         return "https://private-20516c-oasisstoreapp.apiary-mock.com"
     }
+    
+    var asRequest: URLRequest {
+        // Default query
+        let langQuery = [ URLQueryItem(name: "lang", value: "en")]
+        var urlComponent = URLComponents(string: baseUrl)!
+        urlComponent.queryItems = langQuery
+        let url = urlComponent.url!.appendingPathComponent(path)
+        
+        var request = URLRequest(url: url)
+        
+        // header
+        request.setValue("iOS", forHTTPHeaderField: "Platform")
+        
+        if let token = KeychainUtil.shared.retrieve(service: .accessToken) {
+            request.setValue("Bearer " + token , forHTTPHeaderField: "Authorization")
+        }
+        
+        // method
+        request.httpMethod = method.rawValue
+        
+        // body
+        if let parameters = parameter {
+            request.httpBody = try? JSONSerialization.data(withJSONObject: parameters)
+        }
+        
+        return request
+    }
 }
 
 enum HTTPMethod: String {
@@ -28,34 +55,4 @@ enum HTTPMethod: String {
     case put = "PUT"
     case delete = "DELETE"
     case patch = "PATCH"
-}
-
-enum NetworkError: LocalizedError {
-    case redirectError(url: URL?, code: Int)
-    case badUrlResponse(url: URL?, code: Int)
-    case unauthorized(url: URL?, code: Int)
-    case forbidden(url: URL?, code: Int)
-    case serverError(url: URL?, code: Int)
-    case unknown
-    
-    var errorDescription: String? {
-        switch self {
-        
-        case .badUrlResponse(let url, let code):
-            return "Bad URL response \(url?.absoluteString ?? "") \(code)"
-        
-        case .unauthorized(let url, let code):
-            return "Unauthorized error \(url?.absoluteString ?? "") \(code)"
-            
-        case .forbidden(let url, let code):
-            return "URL is forbidden \(url?.absoluteString ?? "") \(code)"
-        
-        case .serverError(let url, let code):
-            return "Internal server error \(url?.absoluteString ?? "") \(code)"
-        
-        case .redirectError(let url, let code):
-            return "URL has redirected \(url?.absoluteString ?? "") \(code)"
-        case .unknown: return "Unknown error"
-        }
-    }
 }

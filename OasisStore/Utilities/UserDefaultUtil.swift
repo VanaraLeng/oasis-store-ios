@@ -7,11 +7,12 @@
 
 import Foundation
 
-enum UserDefaultsKey: String {
-    case username
-    case firstName
-    case lastName
-    case notificationCount
+
+struct UserDefaultsKey: RawRepresentable {
+    var rawValue: String
+    static let username = UserDefaultsKey(rawValue: "username")
+    static let firstName = UserDefaultsKey(rawValue: "firstName")
+    static let lastName = UserDefaultsKey(rawValue: "lastName")
 }
 
 class UserDefaultUtil {

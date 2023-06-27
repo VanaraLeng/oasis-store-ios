@@ -27,7 +27,7 @@ struct ProductDetailView: View {
                         
                         Spacer()
                         
-                        IconButtonView(iconName: "cart", title: "Add to cart")
+                        IconButtonView(iconName: "cart", title: "detail_add_to_cart_button")
                             .onTapGesture {
                                 // Add to cart
                             }

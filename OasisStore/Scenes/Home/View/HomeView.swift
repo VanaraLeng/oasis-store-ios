@@ -9,41 +9,40 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @StateObject private var vm = HomeViewModel()
+    @StateObject private var vm = HomeViewModel(dataService: ProductService())
     
     @State private var showSideMenu = false
     @State private var selectedProduct: Product?
-    @State private var showDetail: Bool = false
+    @State private var showDetail = false
+    @State private var showLogin = false
+    @State private var showLanguage = false
+    @State private var showOrder = false
+    @State private var showCart = false
     
     var body: some View {
         ZStack (alignment: .leading) {
             
             VStack(alignment: .leading, spacing: 0) {
+                headerView
                 
-                HeaderView(title: "Home",
-                           leftIconName: "sidebar.left",
-                           rightIconName: "cart.fill",
-                           delegate: self)
-            
                 if vm.isLoading {
                     ProgressView()
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                 } else if !vm.showError {
                     contentView
                 }
-                
                 Spacer()
             }
          
-            SideMenuView(showSideMenu: $showSideMenu)
+            SideMenuView(showSideMenu: $showSideMenu, onSelectMenu: onMenuSelection)
         }
         .task {
             if vm.newProducts.isEmpty {
-                vm.fetchData()
+                vm.fetchHomeData()
             }
         }
         .refreshable {
-            vm.fetchData()
+            vm.fetchHomeData()
         }
         .navigationDestination(isPresented: $showDetail, destination: {
             if let selectedProduct = selectedProduct {
@@ -51,9 +50,9 @@ struct HomeView: View {
             }
         })
         .toolbarBackground(.hidden, for: .navigationBar)
-        .alert(vm.error ?? "Error", isPresented: $vm.showError) {
-            Button("Retry", role: .cancel) {
-                vm.fetchData()
+        .alert(vm.error ?? "error_title", isPresented: $vm.showError) {
+            Button("retry", role: .cancel) {
+                vm.fetchHomeData()
             }
         }
         
@@ -73,20 +72,38 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-extension HomeView: HeaderViewDelegate {
-    
-    func onLeftButtonPress() {
-        withAnimation(.spring(response: 0.2)) {
-            showSideMenu.toggle()
-        }
-    }
-    
-    func onRightButtonPress() {
-        
-    }
-}
-
 extension HomeView {
+    
+    var headerView: some View {
+        HStack {
+            IconButtonView(iconName: "sidebar.left")
+                .padding()
+                .onTapGesture {
+                    withAnimation(.spring(response: 0.2)) {
+                        showSideMenu.toggle()
+                    }
+                }
+            
+            Spacer()
+            
+            Text("home")
+                .foregroundColor(.white)
+                .font(.headline)
+            
+            Spacer()
+            
+            IconButtonView(iconName: "cart.fill")
+                .padding()
+                .onTapGesture {
+                    withAnimation(.spring(response: 0.2)) {
+                        showCart.toggle()
+                    }
+                }
+        }
+        .frame(height: 50)
+        .background(Color.accentColor)
+    
+    }
     
     var contentView: some View {
         ScrollView {
@@ -94,12 +111,27 @@ extension HomeView {
             BannerView(images: vm.banners)
             
             VStack {
-                ProductSectionView(title: "New Products", products: $vm.newProducts, onItemTap: onProductTap)
+                ProductSectionView(title: "home_section_new", products: $vm.newProducts, onItemTap: onProductTap)
                 
                 Spacer()
                 
-                ProductSectionView(title: "Popular Products", products: $vm.newProducts, onItemTap: onProductTap)
+                ProductSectionView(title: "home_section_popular", products: $vm.newProducts, onItemTap: onProductTap)
             }
+        }
+    }
+    
+    func onMenuSelection(menu: SideMenu) {
+        switch menu {
+        case .order:
+            showOrder.toggle()
+            
+        case .language:
+            showLanguage.toggle()
+            
+        case .logout:
+            showLogin.toggle()
+        
+        default: break
         }
     }
        

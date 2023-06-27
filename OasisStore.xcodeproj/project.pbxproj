@@ -15,7 +15,6 @@
 		3021057B2A3B596D0006F8C1 /* OasisStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021057A2A3B596D0006F8C1 /* OasisStoreTests.swift */; };
 		302105852A3B596D0006F8C1 /* OasisStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105842A3B596D0006F8C1 /* OasisStoreUITests.swift */; };
 		302105872A3B596D0006F8C1 /* OasisStoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105862A3B596D0006F8C1 /* OasisStoreUITestsLaunchTests.swift */; };
-		3021059E2A3B7DB80006F8C1 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021059D2A3B7DB80006F8C1 /* HeaderView.swift */; };
 		302105A02A3B7F010006F8C1 /* IconButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021059F2A3B7F010006F8C1 /* IconButtonView.swift */; };
 		302105A32A3BB29E0006F8C1 /* ProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105A22A3BB29E0006F8C1 /* ProductItemView.swift */; };
 		302105A52A3BBA390006F8C1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105A42A3BBA390006F8C1 /* Product.swift */; };
@@ -32,6 +31,8 @@
 		302105C32A3C340B0006F8C1 /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105C22A3C340B0006F8C1 /* ProductRepository.swift */; };
 		302105C52A3C345A0006F8C1 /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105C42A3C345A0006F8C1 /* NetworkUtil.swift */; };
 		302105C72A3C385F0006F8C1 /* HomeReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302105C62A3C385F0006F8C1 /* HomeReponse.swift */; };
+		3028CE832A44AF5F00779F1A /* MockProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028CE822A44AF5F00779F1A /* MockProductService.swift */; };
+		3028CE862A44B0EA00779F1A /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028CE852A44B0EA00779F1A /* HomeViewModelTest.swift */; };
 		3042FB242A43A44E00180B28 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3042FB232A43A44E00180B28 /* Double.swift */; };
 		3042FB262A43A6AF00180B28 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3042FB252A43A6AF00180B28 /* Text.swift */; };
 		3042FB2B2A43AD7200180B28 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3042FB2A2A43AD7200180B28 /* ProductDetailView.swift */; };
@@ -39,6 +40,10 @@
 		30A07C912A3D1317009E4D6B /* OrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A07C902A3D1317009E4D6B /* OrderResponse.swift */; };
 		30A07C932A3D4E8C009E4D6B /* KeychainUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A07C922A3D4E8C009E4D6B /* KeychainUtil.swift */; };
 		30A07C952A3D7B97009E4D6B /* UserDefaultUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A07C942A3D7B97009E4D6B /* UserDefaultUtil.swift */; };
+		30AF2E252A4A2F7D00BB3B46 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AF2E242A4A2F7D00BB3B46 /* NetworkError.swift */; };
+		30AF2E282A4A4C8200BB3B46 /* KeychainTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AF2E272A4A4C8200BB3B46 /* KeychainTest.swift */; };
+		30AF2E2C2A4A515B00BB3B46 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30AF2E2E2A4A515B00BB3B46 /* Localizable.strings */; };
+		30AF2E332A4A5E6E00BB3B46 /* UserDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AF2E322A4A5E6E00BB3B46 /* UserDefaultTests.swift */; };
 		30C2A01F2A42D13200CB951D /* ProductRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C2A01E2A42D13200CB951D /* ProductRouter.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,7 +76,6 @@
 		302105802A3B596D0006F8C1 /* OasisStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OasisStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		302105842A3B596D0006F8C1 /* OasisStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OasisStoreUITests.swift; sourceTree = "<group>"; };
 		302105862A3B596D0006F8C1 /* OasisStoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OasisStoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3021059D2A3B7DB80006F8C1 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		3021059F2A3B7F010006F8C1 /* IconButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButtonView.swift; sourceTree = "<group>"; };
 		302105A22A3BB29E0006F8C1 /* ProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemView.swift; sourceTree = "<group>"; };
 		302105A42A3BBA390006F8C1 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 		302105C22A3C340B0006F8C1 /* ProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
 		302105C42A3C345A0006F8C1 /* NetworkUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
 		302105C62A3C385F0006F8C1 /* HomeReponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReponse.swift; sourceTree = "<group>"; };
+		3028CE822A44AF5F00779F1A /* MockProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProductService.swift; sourceTree = "<group>"; };
+		3028CE852A44B0EA00779F1A /* HomeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
 		3042FB232A43A44E00180B28 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		3042FB252A43A6AF00180B28 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		3042FB2A2A43AD7200180B28 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
@@ -95,6 +101,12 @@
 		30A07C902A3D1317009E4D6B /* OrderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderResponse.swift; sourceTree = "<group>"; };
 		30A07C922A3D4E8C009E4D6B /* KeychainUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainUtil.swift; sourceTree = "<group>"; };
 		30A07C942A3D7B97009E4D6B /* UserDefaultUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultUtil.swift; sourceTree = "<group>"; };
+		30AF2E242A4A2F7D00BB3B46 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		30AF2E272A4A4C8200BB3B46 /* KeychainTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainTest.swift; sourceTree = "<group>"; };
+		30AF2E2B2A4A50FE00BB3B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		30AF2E2D2A4A515B00BB3B46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		30AF2E2F2A4A516000BB3B46 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		30AF2E322A4A5E6E00BB3B46 /* UserDefaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultTests.swift; sourceTree = "<group>"; };
 		30C2A01E2A42D13200CB951D /* ProductRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +158,7 @@
 		302105682A3B596C0006F8C1 /* OasisStore */ = {
 			isa = PBXGroup;
 			children = (
+				30AF2E2B2A4A50FE00BB3B46 /* Info.plist */,
 				302105962A3B7B460006F8C1 /* Utilities */,
 				302105952A3B7B3A0006F8C1 /* Extensions */,
 				302105932A3B7B1B0006F8C1 /* Models */,
@@ -155,6 +168,7 @@
 				302105942A3B7B230006F8C1 /* Scenes */,
 				302105692A3B596C0006F8C1 /* OasisStoreApp.swift */,
 				3021056D2A3B596D0006F8C1 /* Assets.xcassets */,
+				30AF2E2E2A4A515B00BB3B46 /* Localizable.strings */,
 				3021056F2A3B596D0006F8C1 /* Preview Content */,
 			);
 			path = OasisStore;
@@ -172,6 +186,9 @@
 			isa = PBXGroup;
 			children = (
 				3021057A2A3B596D0006F8C1 /* OasisStoreTests.swift */,
+				3028CE822A44AF5F00779F1A /* MockProductService.swift */,
+				30AF2E262A4A4C5D00BB3B46 /* Utility */,
+				3028CE842A44B0CB00779F1A /* ViewModelTest */,
 			);
 			path = OasisStoreTests;
 			sourceTree = "<group>";
@@ -192,6 +209,7 @@
 				302105A42A3BBA390006F8C1 /* Product.swift */,
 				302105AE2A3C00900006F8C1 /* Menu.swift */,
 				3042FB332A43D33000180B28 /* Banner.swift */,
+				30AF2E242A4A2F7D00BB3B46 /* NetworkError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -257,7 +275,6 @@
 			isa = PBXGroup;
 			children = (
 				302105B82A3C27FE0006F8C1 /* BannerView.swift */,
-				3021059D2A3B7DB80006F8C1 /* HeaderView.swift */,
 				302105AC2A3C007F0006F8C1 /* MenuItemView.swift */,
 				3021059F2A3B7F010006F8C1 /* IconButtonView.swift */,
 				302105A22A3BB29E0006F8C1 /* ProductItemView.swift */,
@@ -293,6 +310,14 @@
 			path = NetworkRespone;
 			sourceTree = "<group>";
 		};
+		3028CE842A44B0CB00779F1A /* ViewModelTest */ = {
+			isa = PBXGroup;
+			children = (
+				3028CE852A44B0EA00779F1A /* HomeViewModelTest.swift */,
+			);
+			path = ViewModelTest;
+			sourceTree = "<group>";
+		};
 		3042FB272A43AD4E00180B28 /* DetailView */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +340,15 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		30AF2E262A4A4C5D00BB3B46 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				30AF2E272A4A4C8200BB3B46 /* KeychainTest.swift */,
+				30AF2E322A4A5E6E00BB3B46 /* UserDefaultTests.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,7 +436,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				ar,
 			);
 			mainGroup = 3021055D2A3B596C0006F8C1;
 			productRefGroup = 302105672A3B596C0006F8C1 /* Products */;
@@ -422,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				302105712A3B596D0006F8C1 /* Preview Assets.xcassets in Resources */,
+				30AF2E2C2A4A515B00BB3B46 /* Localizable.strings in Resources */,
 				3021056E2A3B596D0006F8C1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				302105C52A3C345A0006F8C1 /* NetworkUtil.swift in Sources */,
+				30AF2E252A4A2F7D00BB3B46 /* NetworkError.swift in Sources */,
 				30C2A01F2A42D13200CB951D /* ProductRouter.swift in Sources */,
 				302105A32A3BB29E0006F8C1 /* ProductItemView.swift in Sources */,
 				30A07C952A3D7B97009E4D6B /* UserDefaultUtil.swift in Sources */,
@@ -455,7 +491,6 @@
 				3021056C2A3B596C0006F8C1 /* HomeView.swift in Sources */,
 				302105A72A3BBAC80006F8C1 /* HomeViewModel.swift in Sources */,
 				3042FB242A43A44E00180B28 /* Double.swift in Sources */,
-				3021059E2A3B7DB80006F8C1 /* HeaderView.swift in Sources */,
 				302105AD2A3C007F0006F8C1 /* MenuItemView.swift in Sources */,
 				3042FB262A43A6AF00180B28 /* Text.swift in Sources */,
 				30A07C912A3D1317009E4D6B /* OrderResponse.swift in Sources */,
@@ -482,7 +517,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3028CE862A44B0EA00779F1A /* HomeViewModelTest.swift in Sources */,
+				30AF2E282A4A4C8200BB3B46 /* KeychainTest.swift in Sources */,
 				3021057B2A3B596D0006F8C1 /* OasisStoreTests.swift in Sources */,
+				3028CE832A44AF5F00779F1A /* MockProductService.swift in Sources */,
+				30AF2E332A4A5E6E00BB3B46 /* UserDefaultTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +548,18 @@
 			targetProxy = 302105812A3B596D0006F8C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30AF2E2E2A4A515B00BB3B46 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30AF2E2D2A4A515B00BB3B46 /* en */,
+				30AF2E2F2A4A516000BB3B46 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		302105882A3B596D0006F8C1 /* Debug */ = {
@@ -636,6 +687,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OasisStore/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -667,6 +719,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OasisStore/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

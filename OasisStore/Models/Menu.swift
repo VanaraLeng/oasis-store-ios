@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Menu: Identifiable {
-    let id = UUID().uuidString
-    let title: String
+struct Menu: Identifiable  {
+    let id: Int
+    let title: String.LocalizationValue
     let icon: String
     let style: MenuStyle
     
@@ -18,7 +18,8 @@ struct Menu: Identifiable {
         case destructive
     }
     
-    init(title: String, icon: String, style: MenuStyle = .normal) {
+    init(id: Int, title: String.LocalizationValue, icon: String, style: MenuStyle = .normal) {
+        self.id = id
         self.title = title
         self.icon = icon
         self.style = style

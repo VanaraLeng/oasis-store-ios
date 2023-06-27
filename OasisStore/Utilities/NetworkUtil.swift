@@ -18,72 +18,50 @@ class NetworkUtil {
             .eraseToAnyPublisher()
     }
     
+    static func mapError(error: Error) -> NetworkError {
+        switch error {
+        case is URLError:
+            return .urlError(error as? URLError)
+            
+        case is APIError:
+            return .api(error as? APIError)
+            
+        case is DecodingError:
+            return .decode
+            
+        default:
+            return .unknown
+        }
+    }
+    
     private static func handleMap(out: URLSession.DataTaskPublisher.Output, url: URL?) throws -> Data  {
         guard let res = out.response as? HTTPURLResponse else {
-            throw NetworkError.badUrlResponse(url: url, code: 0)
+            throw APIError.badRequest(url: url)
         }
+        
         let statusCode = res.statusCode
         
-        switch res.statusCode {
+        switch statusCode {
         case 200..<300:
             return out.data
         
         case 401:
-            throw NetworkError.unauthorized(url: url, code: statusCode)
+            throw APIError.unauthorized(url: url)
             
         case 403:
-            throw NetworkError.forbidden(url: url, code: statusCode)
+            throw APIError.forbidden(url: url)
             
         case 300..<400:
-            throw NetworkError.redirectError(url: url, code: statusCode)
+            throw APIError.redirectError(url: url)
             
         case 400..<500:
-            throw NetworkError.badUrlResponse(url: url, code: statusCode)
+            throw APIError.badRequest(url: url)
             
         case 500..<600:
-            throw NetworkError.serverError(url: url, code: statusCode)
+            throw APIError.serverError(url: url)
             
         default:
-            throw NetworkError.unknown
+            throw APIError.unknown
         }
-    }
-    
-    static func handleCompletion(completion: Subscribers.Completion<Error>) {
-        switch completion {
-        case .finished:
-            break
-        case .failure(let error):
-            print(error.localizedDescription)
-        }
-    }
-}
-
-extension APIRouterProtocol {
-    
-    var asRequest: URLRequest {
-        // Default query
-        let langQuery = [ URLQueryItem(name: "lang", value: "en")]
-        var urlComponent = URLComponents(string: baseUrl)!
-        urlComponent.queryItems = langQuery
-        let url = urlComponent.url!.appendingPathComponent(path)
-        
-        var request = URLRequest(url: url)
-        
-        // header
-        request.setValue("iOS", forHTTPHeaderField: "Platform")
-        
-        if let token = KeychainUtil.shared.retrieve(service: .accessToken) {
-            request.setValue("Bearer " + token , forHTTPHeaderField: "Authorization")
-        }
-        
-        // method
-        request.httpMethod = method.rawValue
-        
-        // body
-        if let parameters = parameter {
-            request.httpBody = try? JSONSerialization.data(withJSONObject: parameters)
-        }
-        
-        return request
     }
 }

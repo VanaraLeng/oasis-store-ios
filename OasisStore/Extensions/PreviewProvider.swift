@@ -34,7 +34,7 @@ class DevPreview {
                 discount: 0,
                 gallery: nil)
     ]
-    let menu = Menu(title: "Home", icon: "house.fill")
+    let menu = Menu(id: 0, title: "Home", icon: "house.fill")
     
     let banners = [
         "https://fastly.picsum.photos/id/1063/600/300.jpg?hmac=i2tLmbSCXenelEoYKm10lPXWd5ogiDYiVkKiGRpj2Qo",

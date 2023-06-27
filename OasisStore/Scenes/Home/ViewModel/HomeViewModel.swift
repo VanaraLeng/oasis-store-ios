@@ -11,7 +11,7 @@ import Combine
 class HomeViewModel: ObservableObject {
     
     @Published var newProducts: [Product] = []
-    @Published var PopularProducts: [Product] = []
+    @Published var popularProducts: [Product] = []
     @Published var banners: [String] = []
     
     @Published var isLoading = false
@@ -19,19 +19,19 @@ class HomeViewModel: ObservableObject {
     @Published var error: String?
     @Published var showError = false
     
-    var dataService: ProductService
-    var cancellables: Set<AnyCancellable> = []
+    private var dataService: ProductServiceProtocol
+    private var cancellables: Set<AnyCancellable> = []
     
-    init(dataService: ProductService = ProductService()) {
+    init(dataService: ProductServiceProtocol) {
         self.dataService = dataService
     }
     
-    func fetchData() {
+    func fetchHomeData() {
         isLoading = true
-        dataService.getHomeData()?.sink(receiveCompletion: { [weak self] completion in
-            self?.isLoading = false
+        dataService.getHomeData().sink(receiveCompletion: { [weak self] completion in
             switch completion {
             case .finished:
+                self?.isLoading = false
                 break
                 
             case .failure(let error):
@@ -39,12 +39,10 @@ class HomeViewModel: ObservableObject {
                 self?.error = error.localizedDescription
             }
             
-            
         }, receiveValue: { [weak self] response in
-            
             if response.success == true {
                 self?.newProducts = response.data.newProducts
-                self?.PopularProducts = response.data.popularProducts
+                self?.popularProducts = response.data.popularProducts
                 self?.banners = response.data.banners
             }
         })

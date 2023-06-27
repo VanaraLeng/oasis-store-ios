@@ -7,17 +7,28 @@
 
 import SwiftUI
 
+enum SideMenu: Int {
+    case home
+    case order
+    case language
+    case logout
+}
+
 struct SideMenuView: View {
-    @Binding var showSideMenu: Bool
     
+    @Binding var showSideMenu: Bool
+    var onSelectMenu: (SideMenu) -> Void
+    
+
     
     @State private var menu = [
-        Menu(title: "Home", icon: "house"),
-        Menu(title: "Order", icon: "cart"),
-        Menu(title: "Logout", icon: "rectangle.portrait.and.arrow.right", style: .destructive),
+        Menu(id: SideMenu.home.rawValue, title: "home", icon: "house"),
+        Menu(id: SideMenu.order.rawValue, title: "order", icon: "cart"),
+        Menu(id: SideMenu.language.rawValue, title: "language", icon: "globe"),
+        Menu(id: SideMenu.logout.rawValue, title: "log_out", icon: "rectangle.portrait.and.arrow.right", style: .destructive),
     ]
     
-    private let title = "Oasis Store"
+    private let title = String(localized: "app_name")
     private let footer = "Vanara Leng 2023"
     private let animationDuration = 0.3
     
@@ -33,7 +44,9 @@ struct SideMenuView: View {
 
 struct SideMenuView_Previews: PreviewProvider {
     static var previews: some View {
-        SideMenuView(showSideMenu: .constant(true))
+        SideMenuView(showSideMenu: .constant(true)) { menu in
+            
+        }
     }
 }
 
@@ -63,9 +76,12 @@ extension SideMenuView {
                 ForEach(menu) { menu in
                     MenuItemView(menu: menu)
                         .onTapGesture {
+                            
                             withAnimation(.spring(response: animationDuration)) {
                                 showSideMenu = false
                             }
+                            
+                            onSelectMenu(SideMenu(rawValue: menu.id) ?? .home)
                         }
                 }
             }

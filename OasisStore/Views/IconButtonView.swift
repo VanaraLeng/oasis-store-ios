@@ -9,7 +9,7 @@ import SwiftUI
 
 struct IconButtonView: View {
     @State var iconName: String
-    @State var title: String = ""
+    @State var title: String.LocalizationValue = ""
     @State var animate: Bool = false
     
     var onTap: (() -> Void)?
@@ -19,8 +19,8 @@ struct IconButtonView: View {
             Image(systemName: iconName)
                 .font(.title2)
             
-            if !title.isEmpty {
-                Text(title)
+            if !String(localized: title).isEmpty {
+                Text(String(localized: title))
                     .font(.callout)
                     .fontWeight(.medium)
             }

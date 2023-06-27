@@ -15,6 +15,7 @@ struct OasisStoreApp: App {
             NavigationStack {
                 HomeView()
             }
+//            .environment(\.locale, Locale(identifier: "ar"))
         }
     }
 }

@@ -15,7 +15,7 @@ struct MenuItemView: View {
             HStack (spacing: 16) {
                 Image(systemName: menu.icon)
                 
-                Text(menu.title)
+                Text(String(localized: menu.title) )
                     .font(.headline)
             }
             .padding(.top, 8)
